@@ -9,6 +9,11 @@ import time
 from oauth2client.service_account import ServiceAccountCredentials
 from getpass import getpass
 
+# This version of the campaign facebook bot was the initial quick-and-dirty attempt
+# at automating our campaign facebook messaging. Various issues were run into over the course of
+# usage but we were able to send around 4000 automated messages from about 20 facebook accounts belonging to campaign
+# members. 
+
 
 scope = ['https://spreadsheets.google.com/feeds']
 credentials = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
