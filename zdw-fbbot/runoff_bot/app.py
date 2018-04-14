@@ -12,6 +12,12 @@ from argon2 import PasswordHasher
 iv = b"6'W:\xab\xe1Wt+\x94\xffg\xb6\xeb\xce\xa1"
 people_per_hour_per_account = 50
 
+"""
+This version of the campaign facebook bot is a quick-and-dirty (~4-day timeline)
+attempt at getting around facebook's blocking strategies in an effort to send more messages.
+Other issues were run into preventing us from sending as many messages before, but due to the
+accelerated timeline we were unable to predict/diagnose/fix these issues ahead of time. 
+"""
 class Person:
 
     def __init__(self, name, client):
